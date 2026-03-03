@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Roboto";
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 32px;
+
+}
+.logoWrapper{
+    display:flex;
+    align-items: center;
+    gap:16px;
+}
+.searchWrapper{
+    display:flex;
+    gap:16px;
+}
+.searchInputWrapper{
+   display:flex;
+    background:#dcdada;
+    width: 650px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+.searchInputWrapper input{
+    border:none;
+    outline: none;
+    background-color: #eeeeee;
+    padding:5px 16px;
+    width:90%;
+    border-radius: 32px 0px 0px 32px;
+}
+.searchInputWrapper img{
+    margin:auto;
+}
+.icon{
+    width:28px;
+}
+.mic{
+    background-color: #eeeeee;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    padding:10px;
+}
+.profilepic{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+.buttonsWrapper{
+    display:flex;
+    gap:16px;
+}
+.buttonsWrapper button{
+    background-color:#eeeeee;
+    border:none;
+    padding:6px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+   
+.mainContent{
+    display:flex;
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    gap:32px;
+    font-size: 12px;
+    padding: 10px;
+}
+.navItem{
+    text-align: center;
+
+}
+.navItem img{
+    width:28px;
+}
+.pillsWrapper{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.VideoSection{
+    width:100%;
+    padding: 6px 18px;
+}
+.pill{
+    background-color: #eeeeee;
+    padding:4px 16px;
+    border-radius: 20px;
+    font-weight:450px;
+    font-size: 14px;
+     cursor:pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+#active{
+    background-color: #000000;
+    color: white;
+}
+.pill:hover{
+    background-color:#000000;
+    color:white;
+}
+.thumbnailWrapper img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+.thumbnailWrapper{
+    position: relative;
+}
+.thumbnailWrapper p{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    background-color: #0000009a;
+    color:white;
+}
+.VideoDetails{
+    display:flex;
+    gap:16px;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 8px;
+    margin-bottom:5px;
+}
+.profilepic{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+.VideoDetails h3{
+    font-size: 15px;
+    padding:2px 0px;
+}
+.VideoDetails p{
+    font-size: 14px;
+    color:#606060;
+}
+.videoContainer{
+    padding:16px 10px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap:16px;
+}
+
+@media screen and (max-width:700px){
+    .sidebar{
+        display:none;
+    }
+    .buttonsWrapper{
+        display:none;
+    }
+    .searchInputWrapper{
+        padding:8px;
+        gap:10px;
+    }
+    header logo{
+        width:100px;
+    }
+    .pillsWrapper{
+        overflow-x:scroll;
+        gap:8px;
+    }
+    .pill{
+        min-width: fit-content;
+    }
+}
+
